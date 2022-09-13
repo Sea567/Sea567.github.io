@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《原神》</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            
+        }
+
+        .jiuguan h1 {
+
+            color:#fff;
+            width: 200px;
+            margin: 180px auto 60px;
+            /* background-color: #fff; */
+            text-align: center;
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        .bigbox {
+            
+            height: 400px;
+            width: 1280px;
+
+            margin: 0 auto;
+        }
+
+        .left,
+        .right {
+            float: left;
+        }
+
+        .left {
+            width: 640px;
+            height: 400px;
+            background-color: pink;
+
+        }
+
+        .left img {
+            width: 100%;
+        }
+
+        .right {
+            width: 640px;
+            height: 400px;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .biaoti a {
+            display: inline-block;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 33px 17px 15px;
+            margin-bottom: -2px;
+
+        }
+
+        .biaoti {
+            width: 570px;
+            height: 75px;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+            margin-left: 35px;
+        }
+
+        .xinwen a {
+            display: block;
+            width: 570px;
+            height: 52px;
+            line-height: 52px;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 35px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+        }
+
+        .xinwen a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .biaoti a:hover {
+            border-bottom: 3px solid #FFD49F;
+            color: #FFD49F;
+        }
+
+        .xinwen span {
+            float: right;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .top {
+            z-index: 3;
+            pointer-events: none;
+            position: fixed;
+            height: 67px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .top-list a {
+            pointer-events:auto
+        }
+        
+            
+        
+
+        .top img {
+            float: left;
+            margin-left: 8px;
+        }
+
+        .top div a {
+
+            display: inline-block;
+            color: #B0AFB0;
+            font-size: 17px;
+            height: 68px;
+            line-height: 68px;
+            margin: 0 30px !important;
+
+
+
+        }
+
+        .top-list {
+            float: left;
+            margin: 0 0 0 -90px
+        }
+
+        .top-list a:hover {
+            color: #fff;
+            text-shadow: 0px 0px 15px #FFF;
+
+        }
+        video {
+            margin-top: -55px;
+            width: 100%;
+            height: 100%;
+        }
+        .jiuguan {
+            margin-top: -5px;
+            overflow: hidden;
+            width: 100%;
+            height: 910px;
+            background: url(images/酒馆.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            
+        }
+        /* 城市列表 */
+        .mengde,.liyue,.daoqi {
+            position: relative;
+            overflow: hidden;
+            width: 1920px;
+            height: 260px;
+            margin: 0 auto;
+            
+        }
+        
+       
+        
+        .mengdebg,.liyuebg,.daoqibg{
+            
+            width: 100%;
+            height: 100%;
+            
+            background-size: 1920px 260px;
+            transition: all .4s  ease-out;
+            cursor: pointer;
+        }
+        .mengdebg {
+            background: url(images/蒙德城.jpg) center no-repeat;
+        }
+        .liyuebg {
+            background: url(images/璃月港.jpg) center no-repeat;
+        }
+        .daoqibg{
+            background: url(images/稻妻.jpg) center no-repeat;
+        }
+        
+        .mengde:hover{
+            border: 6px solid #fff;
+        }
+        .mengde:hover .mengdebg{
+            transform: scale(1.1);
+        }
+
+        .liyue:hover {
+            border: 6px solid #fff;
+        }
+        .liyuebg:hover {
+            transform: scale(1.1);
+        }
+        .daoqi:hover {
+            border: 6px solid #fff;
+        }
+        .daoqibg:hover {
+            transform: scale(1.1);
+        }
+        
+        
+       
+        
+    </style>
+</head>
+
+<body>
+        <!-- 视频页 -->
+        <div class="shouye">
+            <div class="top">
+                <img src="images/原神logo.png" alt="">
+                <div class="top-list">
+                    <a href="#">首 页</a>
+                    <a href="#">新 闻</a>
+                    <a href="#">角 色</a>
+                    <a href="#">世 界</a>
+                    <a href="#">漫 画</a>
+                    <a href="#">社 区</a>
+                </div>
+            </div>
+        <video src="images/原神.mp4" autoplay="autoplay" muted="muted" loop = "loop"></video>
+        </div>
+        <!-- 酒馆资讯页 -->
+    <div class="jiuguan">
+        <h1>新闻资讯</h1>
+        <div class="bigbox">
+            <div class="left">
+                <img src="images/轮播图 公子.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="biaoti">
+                    <a href="#">最新</a>
+                    <a href="#">新闻</a>
+                    <a href="#">公告</a>
+                    <a href="#">活动</a>
+                </div>
+                <div class="xinwen">
+                    <a href="#">《原神》线上音乐礼盒限时销售即将开启 <span>2021/10/4</span></a>
+                    <a href="#">《原神》2.2版本「雾海悬谜境」前瞻特别节目回顾长图 <span>2021/10/4</span></a>
+                    <a href="#">《原神》2.2版本「雾海悬谜境」前瞻特别节目 <span>2021/10/4</span></a>
+                    <a href="#">《原神》2.2版本PV：「雾海悬谜境」<span>2021/10/4</span> </a>
+                    <a href="#">原神X雷蛇合作即将开启<span>2021/10/4</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 城市列表页 -->
+    <div class="citi_list">
+        <ul>
+            <li class="mengde" > 
+                <div class="mengdebg">
+                    
+                </div>
+                <div class="qin"></div>
+                
+            </li>
+            <li class="liyue"> 
+                <div class="liyuebg"></div>
+            </li>
+            <li class="daoqi"> 
+                <div class="daoqibg">
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
